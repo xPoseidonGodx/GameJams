@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Oasis
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - BackGroundOasis
   - 
   - 
   - 
@@ -43,6 +45,15 @@ TagManager:
     locked: 0
   - name: BackGround
     uniqueID: 1301073957
+    locked: 0
+  - name: Ground
+    uniqueID: 2712563525
+    locked: 0
+  - name: Trees
+    uniqueID: 2159114859
+    locked: 0
+  - name: Fire
+    uniqueID: 2172106383
     locked: 0
   - name: Player
     uniqueID: 3989651471

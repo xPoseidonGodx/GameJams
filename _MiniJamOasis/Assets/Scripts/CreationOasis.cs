@@ -5,15 +5,16 @@ using UnityEngine;
 public class CreationOasis : MonoBehaviour
 {
     public Transform Center;
-
+    public bool released;
     public SpriteMask mask;
     public GameObject Oasis;
     void Awake(){
-        mask.enabled = false;
+       
+        Oasis = GameObject.FindGameObjectWithTag("Oasis");
     }
     void Start()
     {
-
+        mask.enabled = false;
     }
     void Update()
     {
@@ -21,7 +22,7 @@ public class CreationOasis : MonoBehaviour
         maskDisable();
     }
     void maskCreating(){
-        if(Input.GetButtonDown("Fire1") && mask.enabled == false){
+        if(Input.GetButtonDown("Fire1") && mask.enabled == false && released){
             Instantiate(Oasis, new Vector3(Center.transform.position.x,Center.transform.position.y,Center.transform.position.z), Center.transform.rotation);
            Oasis.SetActive(true);
            mask.enabled = true;

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,9 +7,7 @@ public class Player : MonoBehaviour
     public static Player instance;
         public float speed, speedNormal;
         public float JumpForce,JumpForceNormal;
-
         private bool isJumping;
-
         private SpriteRenderer _sr;
         private Rigidbody2D _rb;
         private Animator _anim;
@@ -49,12 +47,12 @@ public class Player : MonoBehaviour
     void Jump(){
         if(Input.GetButton("Jump") && !isJumping){
             _rb.AddForce(new Vector2(0,JumpForce * Time.deltaTime), ForceMode2D.Impulse);
-            _anim.SetTrigger("Jump");
+            _anim.SetBool("Jump",true);
              _anim.SetBool("Idle", false);
               _anim.SetBool("Run", false);
         }
     }
-    void OnCollisionEnter2D(Collision2D outro){
+       void OnCollisionEnter2D(Collision2D outro){
         if(outro.gameObject.layer == 8){
             isJumping = false;
         }
