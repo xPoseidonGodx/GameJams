@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10.81
   speedNormal: 10.81
-  JumpForce: 14.29
+  JumpForce: 15.4
   JumpForceNormal: 0
 --- !u!212 &670625984
 SpriteRenderer:

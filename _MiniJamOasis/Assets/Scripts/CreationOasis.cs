@@ -36,7 +36,7 @@ public class CreationOasis : MonoBehaviour
                 mask.enabled = false;
                 Time.timeScale = 1f;
                 Player.instance.speed = Player.instance.speedNormal;
-                Player.instance.JumpForce = Player.instance.JumpForceNormal ;
+                
 
             }
         }
