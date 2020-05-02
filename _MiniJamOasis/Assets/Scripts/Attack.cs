@@ -13,13 +13,10 @@ public class Attack : MonoBehaviour
     }
     void Update()
     {
-        while(attacking){
-            Player.instance.speed = 0;
-        }
      attack();
     }
      void attack(){
-        if(Input.GetKeyDown(KeyCode.Z) && !isJumping){
+        if(Input.GetKeyDown(KeyCode.Z) ){
             _anim.SetBool("Attack", true);
              _anim.SetBool("Idle", false);
              _anim.SetBool("Run", false);
@@ -28,11 +25,10 @@ public class Attack : MonoBehaviour
     }
     public void ExitAttack(){
         _anim.SetBool("Attack", false);
-        _anim.SetBool("Idle", true);
-        _anim.SetBool("Run", true);
+        
         attacking = false;
     }
-    void OnCollisionEnter2D(Collision2D outro){
+   void OnCollisionEnter2D(Collision2D outro){
         if(outro.gameObject.layer == 8){
             isJumping = false;
         }

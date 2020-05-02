@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Oasis
   - Attack
+  - OasisFonte
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: BackGround
     uniqueID: 1301073957
+    locked: 0
+  - name: Rocks
+    uniqueID: 3323650585
     locked: 0
   - name: Ground
     uniqueID: 2712563525

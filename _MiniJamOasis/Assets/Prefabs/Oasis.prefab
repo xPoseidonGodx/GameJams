@@ -40,7 +40,7 @@ SpriteMask:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535352882043957651}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -114,4 +114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Center: {fileID: 0}
-  Oasis: {fileID: 0}
+  released: 0
+  mask: {fileID: 1535352882043957650}
+  Oasis: {fileID: 1535352882043957651}
